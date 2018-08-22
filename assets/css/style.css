@@ -70,7 +70,7 @@ html, body {
 	flex: 1 0 auto;
 	margin: 30px;
 	max-width: 960px;
-	width: 100%;
+	width: 98%;
 }
 
 .row {
@@ -116,8 +116,7 @@ h1 {
 	color: #fff;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-size: 36px;
-	flex: 0 0 auto;
-	padding: 32px;
+	padding: 30px;
 }
 
 h1:hover {
@@ -141,19 +140,12 @@ h2 {
 .header {
 	background-color: #fff;
 	border-bottom: solid 2px #cccccc;
-	display: flex;
-	flex: 0 0 auto;
-	flex-direction: row;
-	height: 100px;
-	justify-content: space-between;
-	margin: 0 auto;
 	width: 100%;
 }
 
 .innerHeader {
 	display: flex;
 	flex-direction: row;
-	height: 100px;
 	justify-content: space-between;
 	margin: 0 auto;
 	width: 100%;
@@ -170,6 +162,17 @@ h2 {
 	color: #4aaaa5;
 }
 
+.headerLink {
+	display: flex;
+	flex: 0 1 auto;
+}
+
+.nav {
+	display: flex;
+	flex: 1 1 auto;
+  justify-content: flex-end;
+}
+
 .nav li {
 	display: inline-flex;
 	padding: 2px 15px;
@@ -178,6 +181,32 @@ h2 {
 
 .nav li:last-child {
 	border-right: none;
+}
+
+@media all and (max-width: 545px) {
+	.nav li {
+		display: block;
+		border: none;
+		padding: 8px 0px;
+	}
+
+	.nav {
+		justify-content: center;
+	}
+
+	.nav ul {
+		text-align: center;
+	}
+}
+
+@media all and (max-width: 425px) {
+	.headerLink {
+		max-width: 60%;
+	}
+	
+	h1 {
+		padding: 22px 0px 22px 22px;
+	}
 }
 
 /*
@@ -221,6 +250,12 @@ h2 {
 
 .btn:hover {
 	background: #59CCC6;
+}
+
+@media all and (max-width: 375px) {
+	.contact_group input {
+		width: 95%;
+	}
 }
 
 /*
