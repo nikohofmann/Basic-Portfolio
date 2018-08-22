@@ -188,6 +188,12 @@ h2 {
 		display: block;
 		border: none;
 		padding: 8px 0px;
+		border-right: none;
+		border-bottom: solid 1px #777;
+	}
+
+	.nav li:last-child {
+		border-bottom: none;
 	}
 
 	.nav {
@@ -267,6 +273,7 @@ h2 {
 .portfolioImages {
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: center;
 }
 
 .imgText {
@@ -281,7 +288,8 @@ h2 {
 
 .imgContainer {
 	flex: 0 0 auto;
-	margin: 0px 40px 40px 0px;
+	margin: 0px 20px 40px 20px;
+
 	position: relative;
 }
 
